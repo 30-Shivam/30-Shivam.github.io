@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+    <html>
+        
+        <head>
+            <!--Sets scale of website and helps responsivity -->
+            <meta name = "viewport" content="with=deviceiwidth, initial-scale=1.0">
+            <!--Sets search engine title for website -->
+            <title>Shivam Saravanakumar</title>
+            <!--Imports css style sheet to html file -->
+            <link rel="stylesheet" href = "styles.css">
+            <!-- Imports font family from google into html file -->
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+        <body>
+            <section class = "sub-header">
+                <nav>
+                    <!--Imports logo into webpage -->
+                    <a href="web.html"> <img src = "Images/logo9.png"> </a>
+                    <div class = "nav-links" id="navLinks">
+                        <!-- Menu close icon -->
+                        <i class="fa fa-times-circle" aria-hidden="true" onclick="close()"> </i>
+                        <ul>
+                            <li> <a href="web.html">HOME</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="projects.html">PROJECTS</a></li>
+                            <li> <a href="resume.html">RESUME</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <!-- Menu reveal icon -->
+                    <i class="fa fa-bars" aria-hidden="true"onclick="reveal()"></i>
+                </nav>
+                <!-- Initial Words on top of main page picture -->
+                <h1>About Me</h1>
+            </section>
+        
+            
+            <!-- Page Content-->
+            
+            <section class="about-us">
+                <div class="row">
+                    <div class = "about-col">
+                        <h1>About Me</h1>
+                        <p>Currently enrolled in the University of Waterloo, I am an undergraduate student studying Nanotechnology Engineering and will be graduating in the year 2027. My primary interests lie in software and game development alongside semi-conductor production. I have strong communication and problem solving ability and have knowledge in multiple coding languages which are as follows: Java, Python, Javascript, HTML/CSS, VBA, and PHP. As for libraries I have experience in utilizing the following: OpenCV, PyGame, Java Class, Matplotlib, Pandas, Numpy, AWT Library, and Matlab. Developer tools I have used are as follows: PyCharm, Eclipse IDE, VS Code, IntelliJ IDEA, Anaconda, Brackets, GitHub, and Matlab. </p>
+                    </div>
+                    
+                    <div class = "about-col">
+                        <img src = "Images/aboutpic.jpg">
+                    </div>
+                </div>
+                    
+            </section>
+            
+            <section class="edu">
+                <h1> Past-Current Education</h1>
+                <p> Illustrates academic involvments and achievements.</p>
+                <!-- Creates image and layered description of my education at that location -->
+                <div class="row">
+                    <div class="edu-col">
+                        <img src = "Images/elementary.jpg">
+                        <div class="layer">
+                        <h3>Alexander Graham Bell P.S</h3>
+                        <p>The elementary school I attended was Alexander Graham Bell Public School. I had transferred into the gifted program at this school at Grade 4 as I was identified as a gifted learner with 98th percentile or higher on the Wechsler Intelligence Scale for Children (WISC-IV). During this time my main accomplishment was placing 3rd in the provincial Future City competition. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-col">
+                        <img src = "Images/highschool.jpg">
+                        <div class="layer">
+                        <h3>Pickering H.S</h3>
+                        <p>The high school I attended was Pickering High School. During this time I participated within several clubs which are as follows: Computer Science Club, Distributive Education Clubs of America (DECA), Economics Club, Math Club, and Robotics Club. Upon graduation I was awarded an Honour Roll Certificate, Ontario Scholar Merit Certificate, and a Core French Certification. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-col">
+                        <img src = "Images/university.jpg">
+                        <div class="layer">
+                        <h3>University of Waterloo</h3>
+                        <p>The current University I attend is the University of Waterloo. Currently undergoing the 1B semester in the Nanotechnology Engineering Program, I am engaged in the Data Science Club, Computer Science Club, and Formula 1 Design Team. Significant courses taken or being taken so far include, Introduction to Programming, Computational Methods and Algorithms, and Linear Circuits. 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+             <section class = "footer">
+                <h4>Contact Methods</h4>
+                <p>Looking forward to future opportunites.</p>
+                <div class = "icons">
+                    <a href = "https://www.linkedin.com/in/shivam-kumar-59062124b?original_referer="><i class="fa fa-linkedin"></i></a>
+                    <a href = "https://github.com/30-Shivam"><i class="fa fa-github"></i></a>
+                    <a href = "contact.html"><i class="fa fa-envelope"></i></a>
+                </div>
+                <p>Made by Shivam Saravanakumar</p>
+                
+            </section>
+            
+        <!-- Javascript for menu icon functionality-->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function reveal(){
+                    navLinks.style.right = "0"
+                }
+                
+                function close(){
+                    navLinks.style.right = "-200px"
+                }
+                
+            </script>
+        </body>
+        
+</html>

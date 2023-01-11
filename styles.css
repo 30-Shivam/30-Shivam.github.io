@@ -1,0 +1,578 @@
+*{
+    /* Makes inital webstie boundaries and font family of website */
+    margin: 0;
+    padding:0;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+/* Imports main image in home page*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url(Images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Adds position elements to logo in home page */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Alters dimension of logo on the home page */
+nav img{
+    width: 350px;
+}
+
+/* Positions navigation link text*/
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+/* Creates underline for hover effect on navigation links */
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* Navigation link text*/
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Before hover event effect*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6d1766;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+/* Post hover event effect*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Creates text box*/
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* Adjusts Font size of header 1 in text box*/
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Creates Explore more square*/
+.explore-btn{
+    display: inline block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 13px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Explore more button hover effect*/
+.explore-btn:hover{
+    border: 1px solid #6d1766;
+    background: #6d1766;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+/* Alters attributes for mobile version of upper home page of website */
+@media(max-width: 700px){
+    .text-box h1 {
+    font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    
+    .nav-links{
+        position: fixed;
+        background: #6d1766;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    nav. fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/* About me paragraph below home page image */
+.About{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* Adjusts font of About Me Header*/
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Adjusts font of paragraphs underneath headers*/
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.About explore-btn purp-btn{
+    margin-top: 10px;
+}
+
+/* Makes the columns for the languages under about me paragraph in main page */
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Positions divs side by side */
+.lang-col{
+    flex-basis: 31%;
+    background: #f2e1f0;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+/* Alters font and position of headers for language column boxes */
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Creates hover effect for three language column boxes */
+.lang-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/* Alters attributes for About me section in home page */
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    
+}
+
+/* Education Section */
+.edu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Creates dimension and elements of image border */
+.edu-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative; 
+    overflow: hidden;
+}
+
+/* Alters image width */
+.edu-col img{
+    width: 100%;
+    display: block;
+}
+
+/* Creates and positions a semi-transparent colour overlay on the image */
+.layer{
+    background: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+/* Alters semi-transparent colour overlay when hovering */
+.layer:hover{
+    background: rgba(138, 94, 134,0.85);
+}
+
+/* Adds elements towards the heading of the descriptions */
+.layer h3{
+    width: 90%;
+    font-weight: 500;
+    color:#fff;
+    font-size: 26px;
+    left: 50%;
+    bottom: 40%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Adds elements towards the heading of the descriptions */
+.layer p{
+    width: 90%;
+    font-weight: 100;
+    color: #fff;
+    font-size:13px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Creates hover effect for the header of the description*/
+
+.layer:hover h3{
+    bottom: 68%;
+    opacity: 1;
+}
+
+/* Creates hover effect for the description paragraph*/
+
+.layer:hover p{
+    bottom: 25%;
+    opacity: 1;
+}
+
+/* Positions project elements including description and heading */
+.projects{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+     
+}
+/* Positions project headers and descriptions into columns */
+.proj-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+/* Positions projecy images into columns */
+.proj-col img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.proj-col img:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.4);
+}
+
+/* Adds padding and alignment to project description */
+.proj-col p{
+    padding: 0;
+    text-align: center;
+}
+
+/* Adds padding and alignment to project headers */
+.proj-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.proj-col h4{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/*Positions github referel elements including header and description*/
+
+.GitHub{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+/*Creates rounded rectangle behind text*/
+.ref-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f2e1f0;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+/* Positions and resizes image */
+.ref-col img{
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+/*Positions paragraph text within box*/
+.ref-col p{
+    text-align: center;
+    padding: 0;
+}
+
+/*Adjusts font and alignment for links*/
+.ref-col h3{
+    font-size: 16px;
+    text-align: center;
+}
+
+/*Alters image elements for better visuals in mobile version*/
+@media(max-width:700px){
+    .ref-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/* Positions and inserts contact me link and contact banner*/
+.contact{
+    margin:100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(Images/botbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+}
+
+/*Positions and recolours contact header*/
+.contact h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .contact h1{
+        font-size:24px;
+    }
+}
+
+.footer{
+    width: 100%;
+    text-align:center;
+    padding:30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color:#6d1766;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*About Us Page*/
+
+/*Creates about us page banner*/
+.sub-header{
+    height: 50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/aboutbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/* Adjusts space from top of page for page header*/
+.sub-header h1{
+    margin-top: 100px;
+}
+
+/*Spaces and aligns elements of the page*/
+.about-us{
+    width:80%;
+    margin:auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Spaces and sizes columns of page*/
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+/* Sets the displayed image width to 100% of its width*/
+.about-col img{
+    width: 100%
+}
+
+/* Adjusts attributes for element header*/
+.about-col h1{
+    padding-top: 0;
+}
+
+/*Adjusts attributes for element paragraph*/
+.about-col p{
+    padding: 15px 0 25px;
+    margin-bottom: 10px;
+}
+
+/*Recolours the default button*/
+.purp-btn{
+    border: 1px solid #6d1766;
+    background: transparent;
+    color: #6d1766;
+}
+
+/*Creates new hover effect for the recoloured button*/
+.purp-btn:hover{
+    color:#fff;
+}
+
+/* Creates different banner for projects tab*/
+.proj-header{
+    height: 50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/projbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/* Creates different banner for resume page*/
+.res-header{
+    height: 50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/resbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.con-header{
+    height: 50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/conbanner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+/*Adjusts dimensions of pdf preview*/
+
+
+
+.contact-me {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+content-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #6d1766;
+    margin: 10px;
+    margin-right: 30px;
+    
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20x;
+    margin-bottom: 5p;
+    color: #555;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+

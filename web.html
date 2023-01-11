@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+    <html>
+        
+        <head>
+            <!--Sets scale of website and helps responsivity -->
+            <meta name = "viewport" content="with=deviceiwidth, initial-scale=1.0">
+            <!--Sets search engine title for website -->
+            <title>Shivam Saravanakumar</title>
+            <!--Imports css style sheet to html file -->
+            <link rel="stylesheet" href = "styles.css">
+            <!-- Imports font family from google into html file -->
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+        <body>
+            <section class = "header">
+                <nav>
+                    <!--Imports logo into webpage -->
+                    <a href="web.html"> <img src = "Images/logo9.png"> </a>
+                    <div class = "nav-links" id="navLinks">
+                        <!-- Menu close icon -->
+                        <i class="fa fa-times-circle" aria-hidden="true" onclick="close()"> </i>
+                        <ul>
+                            <li> <a href="web.html">HOME</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="projects.html">PROJECTS</a></li>
+                            <li> <a href="resume.html">RESUME</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <!-- Menu reveal icon -->
+                    <i class="fa fa-bars" aria-hidden="true"onclick="reveal()"></i>
+                </nav>
+                <!-- Initial Words on top of main page picture -->
+                <div class = "text-box">
+                    <h1>Shivam Saravanakumar</h1>
+                    <p> Hi, my name is Shivam Saravanakumar, and I am an aspiring developer attending the University of Waterloo. 
+                    </p>
+                    <a href= "#lower" class = "explore-btn">Explore to know who I am.</a>
+                </div>
+                
+            </section>
+            <!-- About me paragraph in main page -->
+            <section class="About" id = "lower">
+                <h1>About Me</h1>
+                <p>My name is Shivam and currently I am a part of the class of 2027 for engineering at the University of Waterloo. My end goal is to ideally work within the semiconductor or software industry. My primary interests are chip construction, game development, web development, and data proccessing. Below are the three main languages I am most fluent in although I possess intermediate knowledge in a few others. 
+                </p>
+                <p></p>
+                <a href="about.html" class = "explore-btn purp-btn">LEARN MORE</a>
+                <!-- Language experience descriptions below about me paragraph in home page -->
+                <div class="row">
+                    <div class="lang-col">
+                        <h3>Python</h3>
+                        <p>Using Python I have constructed functions with varying complexity, created a few sorting algorithms, manipulated and altered data sets, created an object detection program using computer vision concepts, and a game which is a platform jumper. The python libraries I have utilized are PyGame, OpenCV, Matplotlib, Pandas, Numpy, and Matlab</p>
+                    </div>
+                    
+                    <div class="lang-col">
+                        <h3>Java</h3>
+                        <p>Using Java I have mainly focused on creating objected orientated programs ranging from creating visual representations of sorting algorithms to creating animated cityscapes, utilizing classes, inheritance, polymorphism and abstraction. The Java libraries I have utilized are Java Class Library and Java AWT Library. 
+                        </p>
+                        
+                    </div>
+                    <div class="lang-col">
+                        <h3>HTML/CSS</h3>
+                        <p> Using HTML/CSS I have mainly focused on web development and learned about intermediate graphic design principles and implementations, common web design practices, and web functionality maintenance. My most advanced HTML/CSS project is this current website which is a personal web portfolio for current and future employers. 
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            <!-- Creates header for education section in homepage -->
+            <section class="edu">
+                <h1> Past-Current Education</h1>
+                <p> Illustrates academic involvments and achievements.</p>
+                <!-- Creates image and layered description of my education at that location -->
+                <div class="row">
+                    <div class="edu-col">
+                        <img src = "Images/elementary.jpg">
+                        <div class="layer">
+                        <h3>Alexander Graham Bell P.S</h3>
+                        <p>The elementary school I attended was Alexander Graham Bell Public School. I had transferred into the gifted program at this school at Grade 4 as I was identified as a gifted learner with 98th percentile or higher on the Wechsler Intelligence Scale for Children (WISC-IV). During this time my main accomplishment was placing 3rd in the provincial Future City competition. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-col">
+                        <img src = "Images/highschool.jpg">
+                        <div class="layer">
+                        <h3>Pickering H.S</h3>
+                        <p>The high school I attended was Pickering High School. During this time I participated within several clubs which are as follows: Computer Science Club, Distributive Education Clubs of America (DECA), Economics Club, Math Club, and Robotics Club. Upon graduation I was awarded an Honour Roll Certificate, Ontario Scholar Merit Certificate, and a Core French Certification .</p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-col">
+                        <img src = "Images/university.jpg">
+                        <div class="layer">
+                        <h3>University of Waterloo</h3>
+                        <p>The current University I attend is the University of Waterloo. Currently undergoing the 1B semester in the Nanotechnology Engineering Program, I am engaged in the Data Science Club, Computer Science Club, and Formula 1 Design Team. Significant courses taken or being taken so far include, Introduction to Programming, Computational Methods and Algorithms, and Linear Circuits. 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        <!-- Projects -->
+            <section class="projects">
+                <h1>My Projects</h1>
+                <p> A few of the projects that I have completed.</p>
+                
+                <div class="row">
+                    <div class = "proj-col">
+                        <img src = "Images/game.png">
+                        <h3>Platform Jumper</h3>
+                        <p>This is a small functional Platform Jumper that implements the PyGame library. The game takes inspiration from two classic games, Mario and Gravity Guy. This game has simple mechanics but requires creative thinking in order to successfully finish all levels. The game has a basic UI for the all key event screens. </p>
+                    </div>
+                    <div class = "proj-col">
+                        <img src = "Images/object.png">
+                        <h3>Object Detection App</h3>
+                        <p>This application recognizes and labels a variety of objects but its main objective is to identify and locate cars. This was a project that was used to help Toyota streamline their vehicle production by allowing AI to manage their processes with more precision. The app uses a model which has been trained using a comprehensive sample pool.</p>
+                    </div>
+                    <div class = "proj-col">
+                        <img src = "Images/belt.png">
+                        <h3>Sorting Conveyor Belt</h3>
+                        <p>This program sorts different packages into different categories and visually represents this process implementing the Java AWT library. This project was created in response to a hypothetical business scenario in which a shipping company needed assistance in identifiying and sorting packages to increase efficiency. </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- GitHub Link -->
+            <section class="GitHub">
+                <h1>Relevant Profiles</h1>
+                <p>Here you can find all previous experience and aforementioned projects. Check back for future updates</p>
+                <div class = "row">
+                    <div class="ref-col">
+                        <img src="Images/profile.png">
+                        <div>
+                            <p>This is a link to my GitHub profile. All aforementioned projects' source code can be found.</p>
+                            <h3><a href="url">https://github.com/30-Shivam</a></h3>
+                        </div>
+                    </div>
+                    
+                    <div class = "ref-col">
+                        <img src = "Images/linkedin.png">
+                        <div>
+                            <p>This is a link to my LinkedIn profile. More details about my professional experience and interests can be found.</p>
+                            <h3><a href="url">https://www.linkedin.com/in/shivam-kumar-59062124b?original_referer=</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact -->
+            
+            <section class="contact">
+                <h1> Contact Me for Professional Reasons</h1>
+                <a href="contact.html" class = "explore-btn">CONTACT</a>
+            </section>
+            
+            <!-- Footer -->
+            <section class = "footer">
+                <h4>Contact Methods</h4>
+                <p>Looking forward to future opportunites.</p>
+                <div class = "icons">
+                    <a href = "https://www.linkedin.com/in/shivam-kumar-59062124b?original_referer="><i class="fa fa-linkedin"></i></a>
+                    <a href = "https://github.com/30-Shivam"><i class="fa fa-github"></i></a>
+                    <a href = "contact.html"><i class="fa fa-envelope"></i></a>
+                </div>
+                <p>Made by Shivam Saravanakumar</p>
+                
+            </section>
+        <!-- Javascript for menu icon functionality-->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function reveal(){
+                    navLinks.style.right = "0"
+                }
+                
+                function close(){
+                    navLinks.style.right = "-200px"
+                }
+                
+            </script>
+        </body>
+        
+</html>

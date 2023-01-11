@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+    <html>
+        
+        <head>
+            <!--Sets scale of website and helps responsivity -->
+            <meta name = "viewport" content="with=deviceiwidth, initial-scale=1.0">
+            <!--Sets search engine title for website -->
+            <title>Shivam Saravanakumar</title>
+            <!--Imports css style sheet to html file -->
+            <link rel="stylesheet" href = "styles.css">
+            <!-- Imports font family from google into html file -->
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+        <body>
+            <section class = "con-header">
+                <nav>
+                    <!--Imports logo into webpage -->
+                    <a href="web.html"> <img src = "Images/logo9.png"> </a>
+                    <div class = "nav-links" id="navLinks">
+                        <!-- Menu close icon -->
+                        <i class="fa fa-times-circle" aria-hidden="true" onclick="close()"> </i>
+                        <ul>
+                            <li> <a href="web.html">HOME</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="projects.html">PROJECTS</a></li>
+                            <li> <a href="resume.html">RESUME</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <!-- Menu reveal icon -->
+                    <i class="fa fa-bars" aria-hidden="true"onclick="reveal()"></i>
+                </nav>
+                <!-- Initial Words on top of main page picture -->
+                <h1>Contact Me</h1>
+            </section>
+        
+            
+            <!-- Page Content-->
+            <section class="contact-me">
+                <div class="row">
+                    <div class = "contact-col">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5>+1 416-949-2448</h5>
+                                <p>Sunday - Saturday, 11AM to 9PM</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class = "fa fa-envelope"></i>
+                            <span>
+                                <h5>Professonial Emails</h5>
+                                <p>ks3032004@gmail.com</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class = "fa fa-linkedin"></i>
+                            <span>
+                                
+                                <h5>LinkedIn Profile</h5>
+                                <p><a href="url">www.linkedin.com/in/shivam-kumar-59062124b</a></p>
+                            </span>
+                        </div>
+                            
+                        
+                    </div>
+                    
+                    <div class = "contact-col">
+                        <form action="form-handler.php" method = "post">
+                            <input type="text" name = "name" placeholder="Enter your Name" required>
+                            <input type="email" name = "email" placeholder="Enter email address" required>
+                            <input type="text" name = "subject" placeholder="Enter your subject" required>
+                            <textarea rows="8" name = "message" placeholder="Type your message" required></textarea>
+                            <button type="submit" class = "explore-btn purp-btn">Send Email</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+           
+        <!-- Javascript for menu icon functionality-->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function reveal(){
+                    navLinks.style.right = "0"
+                }
+                
+                function close(){
+                    navLinks.style.right = "-200px"
+                }
+                
+            </script>
+        </body>
+        
+</html>

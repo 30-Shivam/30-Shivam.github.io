@@ -1,0 +1,82 @@
+ <!DOCTYPE HTML>
+    <html>
+        
+        <head>
+            <!--Sets scale of website and helps responsivity -->
+            <meta name = "viewport" content="with=deviceiwidth, initial-scale=1.0">
+            <!--Sets search engine title for website -->
+            <title>Shivam Saravanakumar</title>
+            <!--Imports css style sheet to html file -->
+            <link rel="stylesheet" href = "styles.css">
+            <!-- Imports font family from google into html file -->
+            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        
+        <body>
+            <section class = "proj-header">
+                <nav>
+                    <!--Imports logo into webpage -->
+                    <a href="web.html"> <img src = "Images/logo9.png"> </a>
+                    <div class = "nav-links" id="navLinks">
+                        <!-- Menu close icon -->
+                        <i class="fa fa-times-circle" aria-hidden="true" onclick="close()"> </i>
+                        <ul>
+                            <li> <a href="web.html">HOME</a></li>
+                            <li> <a href="about.html">ABOUT</a></li>
+                            <li> <a href="projects.html">PROJECTS</a></li>
+                            <li> <a href="resume.html">RESUME</a></li>
+                            <li> <a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <!-- Menu reveal icon -->
+                    <i class="fa fa-bars" aria-hidden="true"onclick="reveal()"></i>
+                </nav>
+                <!-- Initial Words on top of main page picture -->
+                <h1>Projects</h1>
+            </section>
+        
+            
+            <!-- Page Content-->
+            
+            <section class="projects">
+                <h1>My Projects</h1>
+                <p> A few of the projects that I have completed.</p>
+                
+                <div class="row">
+                    <div class = "proj-col">
+                        <a href = "https://github.com/30-Shivam/Jame.git"><img src = "Images/game.png"></a>
+                        <h3>Platform Jumper</h3>
+                        <p>This is a small functional Platform Jumper that implements the PyGame library. The game takes inspiration from two classic games, Mario and Gravity Guy. This game has simple mechanics but requires creative thinking in order to successfully finish all levels. The game has a basic UI for the all key event screens. Click image above to see source code.</p>
+                        
+                    </div>
+                    <div class = "proj-col">
+                        <a href="https://github.com/30-Shivam/Toyota-Object-Detection.git"><img src = "Images/object.png"></a>
+                        <h3>Object Detection App</h3>
+                        <p>This application recognizes and labels a variety of objects but its main objective is to identify and locate cars. This was a project that was used to help Toyota streamline their vehicle production by allowing AI to manage their processes with more precision. The app uses a model which has been trained using a comprehensive sample pool. Click image above to see source code.</p>
+                        
+                    </div>
+                    <div class = "proj-col">
+                        <a href="https://github.com/30-Shivam/Conveyor-Belt.git"><img src = "Images/belt.png"></a>
+                        <h3>Sorting Conveyor Belt</h3>
+                        <p>This program sorts different packages into different categories and visually represents this process implementing the Java AWT library. This project was created in response to a hypothetical business scenario in which a shipping company needed assistance in identifiying and sorting packages to increase efficiency. Click image to go to source code. Click image above to see source code.</p>
+                        
+                    </div>
+                </div>
+            </section>
+        <!-- Javascript for menu icon functionality-->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+
+                function reveal(){
+                    navLinks.style.right = "0"
+                }
+                
+                function close(){
+                    navLinks.style.right = "-200px"
+                }
+                
+            </script>
+        </body>
+        
+</html>
